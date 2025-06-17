@@ -18,7 +18,7 @@ We anticipate that MIEJ will likely remain effective against future LLMs with mo
 ## Response to Reviewer ZTs9
 Thanks for your valuable comments.
 ### Q1: Many notations used throughout the paper are not introduced (e.g., in section 3.3 what is T?). Unintroduced Notations
-We would like to clarify that T was explicitly introduced in Section 3.1, under "Problem Statement," where it represents the target LLM (Target LLM), as stated: "Formally, we present the target LLM as T (𝑥)." We kindly request that you point out any other unintroduced notations you may have found, so we can promptly verify and revise them to enhance the paper's clarity and rigor.
+We humbly clarify that T was explicitly introduced in Section 3.1, under "Problem Statement," where it represents the target LLM (Target LLM), as stated: "Formally, we present the target LLM as T (𝑥)." We kindly request that you point out any other unintroduced notations you may have found, so we can promptly verify and revise them to enhance the paper's clarity and rigor.
 
 
 
