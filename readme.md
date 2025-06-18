@@ -22,8 +22,7 @@ Thanks for your valuable comments.
 We humbly clarify that T was explicitly introduced in Section 3.1, under "Problem Statement," where it represents the target LLM (Target LLM), as stated: "Formally, we present the target LLM as T(x)." Thank you for your careful review. Upon a thorough review of the paper, we identified two instances where definitions could be clearer. We will ensure these are addressed and clarified if we have the opportunity to revise the paper for camera readiness.
 
 ## Q2:Methodology Clarity
-In our methodology, the concatenation operator (⊕) serves to sequentially combine prior prompts and model responses, thereby forming an ever-growing conversation history. This is detailed in Equation (2).
-Regarding the concept of "increment," it refers to our strategy of gradually escalating the level of malicious content within the conversation. This core concept is pervasive throughout the paper; for instance, in the introduction and in the "Attack Preparation" section.
+In our methodology, the concatenation operator (⊕) serves to sequentially combine prior prompts and model responses, as detailed in Equation (2).The "increment" concept denotes our strategy of gradually escalating conversational malice. This concept is elaborated in the Introduction and the "Attack Preparation" section.
 
 ## Q3 & L4:Harm Threshold Analysis
 In fact, we have already performed a validation of the harm threshold in the Experimental Settings (Section 4.1), by conducting a comparative experiment with human expert judgments. We are pleased to provide you with a comprehensive evaluation of Recall, Precision, and F1-score across different harm thresholds, based on 500 samples with human expert annotations serving as the gold standard:
