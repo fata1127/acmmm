@@ -18,7 +18,7 @@ We anticipate that MIEJ will likely remain effective against future LLMs with mo
 # Response to Reviewer ZTs9
 Thanks for your valuable comments.
 ## Q1, L1 & L6:Notations & Format problems
-We humbly clarify that T was explicitly introduced in Section 3.1, representing the target LLM. Thank you for your careful review. We identified two instances where definitions could be clearer, which will be addressed if given revision opportunity.
+We humbly clarify that T was explicitly introduced in Section 3.1, representing the target LLM. We deeply appreciate your careful review. Your keen eye has assisted us in identifying two additional instances. We are grateful for this invaluable feedback and will promptly address should we be granted the opportunity for revision.
 ## Q2:Methodology Clarity
 In our methodology, the concatenation operator (⊕) serves to sequentially combine prior prompts and model responses, as detailed in Equation (2).The "increment" concept denotes our strategy of gradually escalating conversational malice. This concept is elaborated in the Introduction and the "Attack Preparation" section.
 ## Q3 & L4:Harm Threshold Analysis
