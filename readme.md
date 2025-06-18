@@ -27,12 +27,12 @@ Regarding the concept of "increment," it refers to our strategy of gradually esc
 
 ### Q3 & L4: Harm Threshold Analysis
 In fact, we have already performed a validation of the harm threshold in the Experimental Settings (Section 4.1), by conducting a comparative experiment with human expert judgments. We are pleased to provide you with a comprehensive evaluation of Recall, Precision, and F1-score across different harm thresholds, based on 500 samples with human expert annotations serving as the gold standard:
-| Harm Threshold | Recall | Precision | F1-score |
-|:---:|:---:|:---:|:---:|
-| 2 | 0.924 | 0.948 | 0.937 |
-| 3 | 0.856 | 0.952 | 0.901 |
-| 4 | 0.778 | 0.986 | 0.870 |
-| 5 | 0.654 | 0.990 | 0.788 |
+|Harm Threshold|Recall|Precision|F1-score|
+|--|--|--|--|
+|2|0.92|0.94|0.93|
+|3|0.85|0.95|0.90|
+|4|0.77|0.98|0.87|
+|5|0.65|0.99|0.78|
 
 ### Q4 & L5: Prompt Selection Criteria
 Our "Incremental exploitation prompts construction" inherently dictates a random selection strategy for adversarial prompts, dynamically generated to counter fine-tuning defenses. While exploring heuristic selection, like choosing prompts from distant clusters in the embedding space after a refusal, we found no significant effectiveness gain over random selection. Such heuristics also added complexity and conflicted with our dynamic generation goal of avoiding reliance on pre-calculated, extensive prompt datasets.
@@ -45,7 +45,7 @@ To strengthen our findings on "response inertia", we conducted an analytical exp
 Experimental Results: We observed that the average ranking of keywords originally prominent in refusal answers significantly decreased as the number of MIEJ attack rounds increased. This empirically supports the "response inertia" concept.
 
 |Round/Token|"cannot"|"sorry"|"don"|"but"|"safety"|
-|---|---|---|---|---|---|
+|--|--|--|--|--|--|
 |0|1.0|1.0|1.0|1.0|1.0|
 |1|2.42|2.67|2.15|3.89|2.03|
 |2|3.18|4.82|4.97|4.21|2.65|
