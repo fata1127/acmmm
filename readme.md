@@ -35,13 +35,13 @@ Our "Incremental exploitation prompts construction" employs a random, dynamic pr
 Given the page limit for ACM Multimedia papers, we have placed detailed definitions of some secondary but easily understandable concepts, including the "malice level," in Supplementary Material Section A.2. We kindly request that you refer to that section for more comprehensive information.
 ## L2:Response Inertia Exlpanation
 To support "response inertia," we conducted an analytical experiment on token probability distribution. We used refusal-answer prefixes from a control model as baselines. Experimental Results: As MIEJ rounds increased, the average ranking of refusal keywords significantly decreased, empirically confirming "response inertia."
-|Round/Token|"cannot"|"sorry"|"don"|"but"|"safety"|
-|--|--|--|--|--|--|
-|0|1.0|1.0|1.0|1.0|1.0|
-|1|2.42|2.67|2.15|3.89|2.03|
-|2|3.18|4.82|4.97|4.21|2.65|
-|3|4.75|5.34|5.51|4.13|2.12|
-|4|4.31|5.05|6.98|5.87|2.56|
+|Round/Token|"cannot"|"sorry"|"don"|"but"|
+|--|--|--|--|--|
+|0|1|1|1|1|
+|1|2.4|2.6|2.1|3.8|
+|2|3.1|4.8|4.9|4.2|
+|3|4.7|5.3|5.5|4.1|
+|4|4.3|5.0|6.9|5.8|
 
 
 # Response to Reviewer Gm4v
