@@ -104,7 +104,7 @@ We conducted supplementary experiments on MIEJ's effectiveness against defense m
 1. Blacklist Filter Defense Experiment:
 We evaluated MIEJ against a keyword blacklist filter using Qwen2-7B-Instruct and GPT-4. The filter blocked responses containing malicious keywords.
 
-| Model                     | Max Malicious Conversation Turns (Turns) |
+| Model                     | Max Malicious Conversation Turns |
 |---------------------------|------------------------------------------|
 | Qwen2-7B-Instruct (w/o filter) | 48                                       |
 | Qwen2-7B-Instruct (w/ filter)  | 18                                       |
