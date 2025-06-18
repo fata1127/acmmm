@@ -3,16 +3,16 @@ https://openreview.net/forum?id=b0jNBAVfdk#discussion
 # Response to Reviewer FiGH
 Thanks for your valuable comments.
 
-## Q1: Could you elaborate further on the ethical considerations surrounding the MIEJ methodology and the "Incremental Exploitation Prompts" dataset, particularly regarding responsible disclosure and mitigation of potential misuse?  Ethics, Misuse, Disclosure 
+## Q1:Ethics, Misuse, Disclosure 
 The "Incremental Exploitation Prompts" aren't a static dataset that's easily misused. Instead, they're a mechanism generated in real-time, under a specific strategy. This dynamic nature helps us counteract fine-tuning defenses against malicious prompts and prevents easy misuse. For an everyday user to achieve an attack effect comparable to MIEJ, they'd need a deep understanding and the ability to adjust prompts in real-time. This is beyond the technical scope of an average user.
 
-## Q2: While GPT-4o showed high correlation with human judgments for harmfulness scoring on a subset, how do you propose addressing potential inherent biases or limitations of using an LLM as a judge at scale, especially for nuanced or novel harmful content? LLM Judge Bias
+## Q2:LLM Judge Bias
 GPT-4o's ability to assess harmful content has been validated by its high correlation with human judgments. As we state in the paper (e.g., Section 4.1 "Experimental Settings"), comparative experiments with 500 human-annotated samples showed a Pearson correlation coefficient between GPT-4o and human judgments as high as 0.96. We chose GPT-4o for evaluation precisely because it has more advanced language understanding and judgment capabilities than all the LLM models we tested. By using a higher-tier model to scrutinize the behavior of lower-tier target models, we can mitigate potential inherent biases or limitations that might arise during the evaluation process.
 
-## Q3: The concept of "response inertia" is key. Beyond the influence of prior context, are there deeper investigations planned or insights into the specific LLM mechanisms (e.g., attention shifts, activation patterns) that drive this phenomenon during MIEJ? Response Inertia Mechanism
+## Q3:Response Inertia Mechanism
 We plan to investigate this further in future work. This includes using explainable AI techniques (like attention mechanism analysis and activation pattern visualization) to explore the specific LLM mechanisms within the model that cause the gradual weakening of safety alignment during MIEJ attacks. Understanding these micro-mechanisms will help us describe and exploit 'response inertia' more precisely, providing critical insights for developing more robust defense measures.
 
-## Q4: How do you foresee MIEJ's effectiveness against future LLMs that might incorporate more sophisticated, stateful defense mechanisms specifically designed to detect and counter multi-round, incremental attacks? MIEJ Future Defenses
+## Q4:MIEJ Future Defenses
 We anticipate that MIEJ will likely remain effective against future LLMs with more sophisticated defense mechanisms. The core of MIEJ lies in exploiting the LLM's response inertia, which is inherently linked to the model's in-context learning ability and the mechanisms of autoregressive generation. We believe that completely eliminating this inertia without compromising the LLM's core performance might represent a fundamental trade-off. If future defense mechanisms interfere too much with the contextual information flow, the model could become incoherent or "forgetful" in normal dialogue, which would impact its usability.
 
 # Response to Reviewer ZTs9
