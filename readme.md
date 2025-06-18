@@ -18,7 +18,7 @@ We anticipate that MIEJ will likely remain effective against future LLMs with mo
 # Response to Reviewer ZTs9
 Thanks for your valuable comments.
 ## Q1, L1 & L6: Notations & Format Problems
-We humbly clarify that T was explicitly introduced in Section 3.1, representing the target LLM. We deeply appreciate your careful review. Your keen eye has assisted us in identifying two additional instances. We are grateful for this invaluable feedback and will promptly address should we be granted the opportunity for revision.
+We humbly clarify that T was explicitly introduced in Section 3.1, representing the target LLM. We deeply appreciate your meticulous review. Your keen eye has assisted us in identifying two additional instances. We are grateful for this invaluable feedback and will promptly address should we be granted the opportunity for revision.
 ## Q2: Methodology Clarity
 In our methodology, the concatenation operator (⊕) serves to sequentially combine prior prompts and model responses, as detailed in Eq.2. The "increment" concept denotes our strategy of gradually escalating conversational malice. This concept is elaborated in the Introduction and the "Attack Preparation" section.
 ## Q3 & L4:Harm Threshold Analysis
@@ -34,7 +34,7 @@ Our "Incremental exploitation prompts construction" employs a random, dynamic pr
 ## Q5 & L3: Malice Level Definition
 Given the page limit for ACM Multimedia papers, we have placed detailed definitions of some secondary but easily understandable concepts, including the "malice level," in Supplementary Material Section A.2. We kindly request that you refer to that section for more comprehensive information.
 ## L2: Response Inertia Exlpanation
-To support "response inertia" we conducted an analytical experiment on token probability distribution. We used refusal-answer prefixes from a control model as baselines. Experimental Results: As MIEJ rounds increased, the average ranking of refusal keywords significantly decreased, empirically confirming "response inertia."
+To support "response inertia" we conducted an analytical experiment on token probability distribution. We used refusal-answer prefixes from a control model as baselines. Experimental Results: As MIEJ rounds increased, the average ranking of refusal keywords significantly decreased, empirically confirming "response inertia"
 |Round/Token|"cannot"|"sorry"|"don"|"but"|
 |--|--|--|--|--|
 |0|1|1|1|1|
