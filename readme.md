@@ -18,11 +18,11 @@ We anticipate that MIEJ will likely remain effective against future LLMs with mo
 # Response to Reviewer ZTs9
 Thanks for your valuable comments.
 ## Q1, L1 & L6:Notations & Format problems
-We humbly clarify that T was explicitly introduced in Section 3.1, where it represents the target LLM. Thank you for your careful review. Upon a thorough review of the paper, we identified two instances where definitions could be clearer. We will ensure these are addressed and clarified if we have the opportunity to revise the paper for camera readiness.
+We humbly clarify that T was explicitly introduced in Section 3.1, representing the target LLM. Thank you for your careful review. We identified two instances where definitions could be clearer, which will be addressed if given revision opportunity.
 ## Q2:Methodology Clarity
 In our methodology, the concatenation operator (⊕) serves to sequentially combine prior prompts and model responses, as detailed in Equation (2).The "increment" concept denotes our strategy of gradually escalating conversational malice. This concept is elaborated in the Introduction and the "Attack Preparation" section.
 ## Q3 & L4:Harm Threshold Analysis
-In fact, we have already performed a validation of the harm threshold in the Experimental Settings section, by conducting a comparative experiment with human expert judgments. We are pleased to provide you with a comprehensive evaluation of Recall, Precision, and F1-score across different harm thresholds, based on 500 samples with human expert annotations:
+We have already validated harm threshold 2 (Pearson correlation 0.96) against human expert judgments in the Experimental Settings section. For further detail, we are pleased to provide a comprehensive evaluation of Recall, Precision, and F1-score across different harm thresholds, based on 500 human-annotated samples.
 |Harm Threshold|Recall|Precision|F1-score|
 |--|--|--|--|
 |2|0.92|0.94|0.93|
