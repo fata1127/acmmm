@@ -34,7 +34,7 @@ In fact, we have already performed a validation of the harm threshold in the Exp
 | 4 | 0.778 | 0.986 | 0.870 |
 | 5 | 0.654 | 0.990 | 0.788 |
 
-### Q4: Prompt Selection Criteria
+### Q4 & L5: Prompt Selection Criteria
 Our "Incremental exploitation prompts construction" inherently dictates a random selection strategy for adversarial prompts, dynamically generated to counter fine-tuning defenses. While exploring heuristic selection, like choosing prompts from distant clusters in the embedding space after a refusal, we found no significant effectiveness gain over random selection. Such heuristics also added complexity and conflicted with our dynamic generation goal of avoiding reliance on pre-calculated, extensive prompt datasets.
 
 ### Q5 & L3: Malice Level Definition
