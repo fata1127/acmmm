@@ -94,22 +94,21 @@ For models with strict token limits (smaller parameters), weaker safety alignmen
 # Response to Reviewer 6ArY
 Thanks for your valuable comments.
 
-## Q1:Prompt Set Construction & Q2: Prompt Augmentation Details
+## Q1, C1 & Q2: Prompt Set Construction &  Augmentation Details
 Due to main paper's page limits, detailed prompt set Q construction and augmentation specifics are in Supplementary Material A.2, "Malicious Question Generation." Briefly, human experts manually created initial malicious questions across topics/malice levels. These were then fed to GPT-4o API for few-shot prompt augmentation. Experts subsequently reviewed augmented questions for accuracy and malice-level alignment, resolving discrepancies by consensus. Finally, as noted in Section 3.2 "Attack Preparation," a fine-tuned XLM-RoBERTa model performed a two-stage validation for objective malice-level alignment. We direct you to Supplementary Material A.2 for the complete system prompts and full details.
 
-
-## Q3: Defense Mechanism Assessment
+## Q3 & C2: Defense Mechanism Assessment
 We conducted supplementary experiments on MIEJ's effectiveness against defense mechanisms.
 
 1. Blacklist Filter Defense Experiment:
 We evaluated MIEJ against a keyword blacklist filter using Qwen2-7B-Instruct and GPT-4. The filter blocked responses containing malicious keywords.
 
-| Model                     | Max Malicious Conversation Turns |
-|---------------------------|------------------------------------------|
-| Qwen2-7B-Instruct (w/o filter) | 48                                       |
-| Qwen2-7B-Instruct (w/ filter)  | 18                                       |
-| GPT-4 (w/o filter)        | 48                                       |
-| GPT-4 (w/ filter)         | 16                                       |
+| Model | Max Malicious Conversation Turns |
+|--|--|
+| Qwen2-7B-Instruct (w/o filter) | 48 |
+| Qwen2-7B-Instruct (w/ filter)  | 18 |
+| GPT-4 (w/o filter) | 48 |
+| GPT-4 (w/ filter) | 16 |
 
 2. Optimization Strategy Against Blacklists:
 To counter blacklists, we used a prompt optimization strategy: a named entity substitution LLM replaced sensitive keywords (e.g., "bomb" to "explosive device"). This restored MIEJ's attack effectiveness by circumventing literal keyword matching.
@@ -117,6 +116,8 @@ To counter blacklists, we used a prompt optimization strategy: a named entity su
 3. LLM-based (Non-Rule) Filters:
 While LLM-based judgment filters significantly hinder MIEJ by recognizing subtle malicious intent, their practical deployment faces substantial challenges. Such defenses incur nearly double the time and token costs due to cascaded LLM inference, rendering them unfeasible for large-scale, real-time applications. Our work highlights existing LLM defense vulnerabilities under real-world cost and efficiency constraints, pushing for more efficient and intelligent defense paradigms.
 
+## C3: Figures Overlap:
+Thank you for your incredibly meticulous observation. We are truly grateful for your keen eye. If our paper is granted a camera-ready opportunity, we assure you that correcting this specific formatting error will be our top priority.
 
 
 
